@@ -8,7 +8,7 @@ RSpec.describe 'Weather API' do
    get '/api/v1/forecast?location=denver,co', headers: headers
 
    weather = JSON.parse(response.body, symbolize_names: true)
-require "pry"; binding.pry
+
    expect(response).to be_successful
 
    expect(weather[:data]).to have_key(:id)
