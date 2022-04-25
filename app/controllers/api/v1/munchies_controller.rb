@@ -8,7 +8,8 @@ class Api::V1::MunchiesController < ApplicationController
     coordinates = MapFacade.find_coordinates(destination)
     weather = WeatherFacade.find_weather(coordinates.latitude, coordinates.longitude)
     restaurant = RestaurantFacade.find_restaurants(category, destination)
-    require "pry"; binding.pry
+    munchies = Munchies.new(destination, travel_time, weather, restaurant)
+    render json: MunchiesSerializer.new(munchies)
   end
 
 end
