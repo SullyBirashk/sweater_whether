@@ -5,4 +5,10 @@ class MapFacade
     coordinates = data[:results][0][:locations][0][:latLng]
     Map.new(coordinates)
   end
+
+  def self.find_travel_time(from, to)
+    data = MapService.get_travel_time(from, to)
+
+    Travel.new(data[:route])
+  end
 end
