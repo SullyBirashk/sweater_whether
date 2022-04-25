@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bcrypt', '~> 3.1.7'
 gem 'jsonapi-serializer'
+gem 'faraday'
 
 group :development, :test do
   gem 'capybara'
