@@ -23,3 +23,6 @@
 /config/master.key
 
 /coverage
+
+/config/application.yml
+config/application.yml
