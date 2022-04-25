@@ -13,30 +13,4 @@ RSpec.describe RestaurantFacade do
     expect(restaurant.address).to be_a Array
   end
 
-  # it 'returns example' do
-  #  example = RestaurantFacade.method_here
-  #  example.each do |ex|
-  #    expect(ex).to be_a PoroName
-  #    expect(ex.attribute).to be_a String
-  #    expect(ex.attribute).to_not be_nil
-  #   end
-  # end
-  #
-  # it 'returns example' do
-  #  example = RestaurantFacade.method_here
-  #  example.each do |ex|
-  #    expect(ex).to be_a PoroName
-  #    expect(ex.attribute).to be_a String
-  #    expect(ex.attribute).to_not be_nil
-  #   end
-  # end
-  #
-  # it 'returns example' do
-  #  example = RestaurantFacade.method_here
-  #  example.each do |ex|
-  #    expect(ex).to be_a PoroName
-  #    expect(ex.attribute).to be_a String
-  #    expect(ex.attribute).to_not be_nil
-  #   end
-  # end
 end

@@ -17,28 +17,4 @@ RSpec.describe RestaurantService do
    expect(search[:businesses][0]).to have_key(:name)
    expect(search[:businesses][0]).to have_key(:location)
  end
-
- # it 'returns example' do
- #   search = RestaurantService.method_here
- #
- #   expect(search).to be_a Hash
- #   expect(search).to have_key(:)
- #   expect(search[:]).to be_a Array
- #   expect(search[:]).to be_a Integer
- #   search[:].each do |example|
- #    expect(example).to have_kay(:)
- #   end
- # end
- #
- #  it 'returns example' do
- #   search = RestaurantService.method_here
- #
- #   expect(search).to be_a Hash
- #   expect(search).to have_key(:)
- #   expect(search[:]).to be_a Array
- #   expect(search[:]).to be_a Integer
- #   search[:].each do |example|
- #    expect(example).to have_kay(:)
- #   end
- # end
 end

@@ -5,5 +5,4 @@ class Restaurant
     @name = data[:name]
     @address = data[:location][:display_address]
   end
-
 end

@@ -11,5 +11,4 @@ class Api::V1::MunchiesController < ApplicationController
     munchies = Munchies.new(destination, travel_time, weather, restaurant)
     render json: MunchiesSerializer.new(munchies)
   end
-
 end

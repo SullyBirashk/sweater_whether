@@ -4,5 +4,4 @@ class Travel
   def initialize(data)
     @time = data[:formattedTime]
   end
-
 end

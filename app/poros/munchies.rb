@@ -9,5 +9,4 @@ class Munchies
                  temperature: forecast[:current_weather].temp}
     @restaurant = {name: restaurant.name, address: restaurant.address}
   end
-
 end
