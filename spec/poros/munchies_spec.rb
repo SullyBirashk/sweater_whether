@@ -4,11 +4,11 @@ RSpec.describe Munchies do
 
   it 'exists with attributes' do
    munchies_data = {destination_city: "pueblo,co",
-                    travel_time: "01:45:23",
+                    travel_time: Travel.create!(time: "01:45:23"),
                     forecast: {summary: 'few clouds', temperature: 281.65},
                     restaurant: {name: 'Wonderful Bistro', address: ["4602 N Elizabeth St", "Ste 120", "Pueblo, CO 81008"]}}
 
-   munchies = Munchies.new(munchies_data)
+   munchies = Munchies.new(munchies_data[:destination_city], munchies_data[:travel_time], munchies_data[:forecast], munchies_data[:restaurant])
    expect(munchies).to be_a Munchies
    expect(munchies.destination_city).to eq("pueblo,co")
    expect(munchies.travel_time).to eq("01:45:23")
