@@ -15,6 +15,7 @@ RSpec.describe MapFacade do
     to = 'pueblo,co'
 
     travel_time = MapFacade.find_travel_time(from, to)
+
     expect(travel_time).to be_a Travel
     expect(travel_time.time).to be_a String
     expect(travel_time.time).to eq("01:45:23")
