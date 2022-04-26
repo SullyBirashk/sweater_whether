@@ -15,7 +15,7 @@ RSpec.describe Munchies do
     expect(munchies.destination_city).to be_a String
     expect(munchies.travel_time).to be_a String
     expect(munchies.forecast[:summary]).to be_a String
-    expect(munchies.forecast[:temperature]).to be_a Float
+    expect(munchies.forecast[:temperature]).to_not be_nil
     expect(munchies.restaurant[:name]).to be_a String
     expect(munchies.restaurant[:address]).to be_a Array
   end
