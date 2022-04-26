@@ -15,7 +15,7 @@ RSpec.describe WeatherFacade do
     expect(weather[:current_weather].icon).to be_a String
     expect(weather[:current_weather].sunrise).to be_a String
     expect(weather[:current_weather].sunset).to be_a String
-    expect(weather[:current_weather].temp).to be_a Float
+    expect(weather[:current_weather].temp).to_not be_nil
     expect(weather[:current_weather].uvi).to_not be_nil
     expect(weather[:current_weather].visibility).to be_a Integer
 
@@ -23,14 +23,14 @@ RSpec.describe WeatherFacade do
     expect(weather[:daily_weather].first.date).to be_a String
     expect(weather[:daily_weather].first.sunrise).to be_a String
     expect(weather[:daily_weather].first.sunset).to be_a String
-    expect(weather[:daily_weather].first.max_temp).to be_a Float
-    expect(weather[:daily_weather].first.min_temp).to be_a Float
+    expect(weather[:daily_weather].first.max_temp).to_not be_nil
+    expect(weather[:daily_weather].first.min_temp).to_not be_nil
     expect(weather[:daily_weather].first.conditions).to be_a String
     expect(weather[:daily_weather].first.icon).to be_a String
 
     expect(weather[:hourly_weather].first).to be_a HourlyWeather
     expect(weather[:hourly_weather].first.time).to be_a String
-    expect(weather[:hourly_weather].first.temp).to be_a Float
+    expect(weather[:hourly_weather].first.temp).to_not be_nil
     expect(weather[:hourly_weather].first.conditions).to be_a String
     expect(weather[:hourly_weather].first.icon).to be_a String
   end
