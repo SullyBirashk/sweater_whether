@@ -5,5 +5,4 @@ class RestaurantFacade
 
    Restaurant.new(data[:businesses][0])
  end
-
 end

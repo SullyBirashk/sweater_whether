@@ -4,5 +4,4 @@ class UserSerializer
   set_type 'users'
 
   attributes :email, :access_token
-
 end

@@ -5,5 +5,4 @@ class Api::V1::BackgroundsController < ApplicationController
     image = ImageFacade.find_image(location)
     render json: ImageSerializer.new(image)
   end
-
 end

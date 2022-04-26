@@ -6,5 +6,4 @@ class Api::V1::ForecastController < ApplicationController
     forecast = Forecast.new(response[:current_weather], response[:daily_weather], response[:hourly_weather])
     render json: WeatherSerializer.new(forecast)
   end
-
 end

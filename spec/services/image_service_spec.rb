@@ -16,28 +16,4 @@ RSpec.describe ImageService do
    expect(search[:results][0]).to have_key(:alt_description)
    expect(search[:results][0]).to have_key(:urls)
  end
-
- # it 'returns example' do
- #   search = ImageService.method_here
- #
- #   expect(search).to be_a Hash
- #   expect(search).to have_key(:)
- #   expect(search[:]).to be_a Array
- #   expect(search[:]).to be_a Integer
- #   search[:].each do |example|
- #    expect(example).to have_kay(:)
- #   end
- # end
- #
- #  it 'returns example' do
- #   search = ImageService.method_here
- #
- #   expect(search).to be_a Hash
- #   expect(search).to have_key(:)
- #   expect(search[:]).to be_a Array
- #   expect(search[:]).to be_a Integer
- #   search[:].each do |example|
- #    expect(example).to have_kay(:)
- #   end
- # end
 end

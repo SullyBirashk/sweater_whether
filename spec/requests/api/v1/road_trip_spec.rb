@@ -31,40 +31,4 @@ RSpec.describe 'Roadtrip API' do
    expect(road_trip[:data][:attributes][:weather_at_eta]).to have_key(:temperature)
    expect(road_trip[:data][:attributes][:weather_at_eta]).to have_key(:conditions)
  end
-
- # it 'Can make a patch request' do
- #   example_params = {}
- #
- #   headers = {'CONTENT_TYPE' => 'application/json'}
- #
- #   patch '/api/v1/', headers: headers, params: JSON.generate(example: example_params)
- #
- #   example = JSON.parse(response.body, symbolize_names: true)
- #
- #   expect(response).to be_successful
- #
- #   expect(example[:data]).to have_key(:id)
- #   expect(example[:data][:id]).to be_an(String)
- #
- #   expect(example[:data][:attributes]).to have_key(:)
- #   expect(example[:data][:attributes][:]).to be_a(String)
- # end
- #
- # it 'Can make a delete request' do
- #   example_params = {}
- #
- #   headers = {'CONTENT_TYPE' => 'application/json'}
- #
- #   delete '/api/v1/', headers: headers, params: JSON.generate(example: example_params)
- #
- #   example = JSON.parse(response.body, symbolize_names: true)
- #
- #   expect(response).to be_successful
- #
- #   expect(example[:data]).to have_key(:id)
- #   expect(example[:data][:id]).to be_an(String)
- #
- #   expect(example[:data][:attributes]).to have_key(:)
- #   expect(example[:data][:attributes][:]).to be_a(String)
- # end
 end

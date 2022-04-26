@@ -12,5 +12,4 @@ RSpec.describe RestaurantFacade do
     expect(restaurant.name).to be_a String
     expect(restaurant.address).to be_a Array
   end
-
 end
