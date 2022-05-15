@@ -3,7 +3,7 @@
  Have you ever wanted to plan a roadtrip, checkout nearby businesses and restaurants, and check the weather of your destination? Well If you have, you know it could be a hassle using multiple apps going back and forth to check for all that info. Introducing Sweater Weather, the all new application that when given a start location and a destination, you can track the distance, the travel time, and the weather with just one call! If you wanted to see nearby restaurants, you could give the app a keyword and it will show you results related to your keyword. Enjoy this one stop shop to all your needs without swiping through multiple apps!
 
 Here's why:
-* Your time should be focused on other things than stressing about a RoadTrip. This app solves that problem and helps make planning trips easier. 
+* Your time should be focused on other things rather than stressing about a Road Trip. This app solves that problem and helps make planning trips easier. 
 * You shouldn't be doing the same tasks to find all the important info you need. 
 
 
